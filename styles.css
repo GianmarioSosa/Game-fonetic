@@ -1,0 +1,143 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1e1e1e; /* Fondo oscuro */
+  color: #ffffff; /* Texto blanco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: #2a2a2a; /* Fondo de contenedor oscuro */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: relative; /* Para posicionar el menú relativo a este contenedor */
+}
+
+#menu-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #3a3a3a; /* Fondo del botón */
+  color: #ffffff; /* Texto blanco */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#menu-btn:hover {
+  background-color: #4a4a4a; /* Color al pasar el mouse */
+}
+
+#rules-container {
+  position: absolute;
+  top: 50px;
+left: 10px;
+  background: #2a2a2a; /* Fondo del menú */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: none; /* Ocultar por defecto */
+}
+
+#close-menu-btn {
+  margin-bottom: 10px;
+  background-color: #3a3a3a; /* Fondo del botón de cerrar */
+  color: #ffffff; /* Texto blanco */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#close-menu-btn:hover {
+  background-color: #4a4a4a; /* Color al pasar el mouse */
+}
+
+#rules-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#rules-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#rules-list li {
+  margin: 10px 0;
+  padding: 10px;
+  background: #3a3a3a; /* Fondo de cada regla */
+  border-radius: 5px;
+}
+
+#change-language-btn {
+  background-color: #3a3a3a; /* Fondo del botón de cambio de idioma */
+  color: #ffffff; /* Texto blanco */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#change-language-btn:hover {
+  background-color: #4a4a4a; /* Color al pasar el mouse */
+}
+
+#word-display {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3a3a3a; /* Fondo de los botones */
+  color: #ffffff; /* Texto blanco */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4a4a4a; /* Color al pasar el mouse */
+}
+
+#hint {
+  margin-top: 10px;
+  color: #ffcc00; /* Color de la pista */
+}
+
+#score, #lives, #timer {
+  margin: 10px 0;
+}
+
+#footer-message {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: #ffffff; /* Color del texto */
+  font-size: 14px; /* Tamaño de la fuente */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+

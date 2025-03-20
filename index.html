@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Join The English</title>
+</head>
+<body>
+    <button id="menu-btn">Menu</button>
+    <div id="rules-container" style="display: none;">
+        <button id="close-menu-btn">Close</button>
+        <h2 id="rules-title">Rules of the OI Diphthong Game</h2>
+        <ul id="rules-list">
+            <li>Objective of the Game: Correctly complete the words that contain the diphthong "OI" to earn points.</li>
+            <li>Saying the Word Correctly: After guessing the word correctly, the team must say the word; otherwise, they will not receive the point they earned.</li>
+            <li>Use of Hints: 
+                <ul>
+                    <li>The player can request a hint that consists of the pronunciation of the complete word. Only one hint is allowed per word.</li>
+                </ul>
+            </li>
+            <li>Point System:
+                <ul>
+                    <li>Each time the player correctly completes a word, they receive 1 point.</li>
+                    <li>If the player completes the word incorrectly, they do not receive points and lose 1 life.</li>
+                </ul>
+            </li>
+            <li>Lives:
+                <ul>
+                    <li>Each team starts with a total of 3 lives.</li>
+                    <li>If the team loses all their lives, the game ends.</li>
+                </ul>
+            </li>
+            <li>Time Limit: 
+                <ul>
+                    <li>The bomb can explode at any moment, so think fast!</li>
+                </ul>
+            </li>
+        </ul>
+        <button id="change-language-btn">Change to Spanish</button>
+    </div>
+    <div class="container">
+        <h1>Jɔɪn The English</h1>
+        <div id="word-container">
+            <span id="word-display">_ _ _ _</span>
+        </div>
+        <input type="text" id="user-input" placeholder="Guess a letter">
+        <button id="submit-btn">Submit</button>
+        <button id="hint-btn">Hint</button>
+        <p id="hint" style="display:none;"></p>
+        <p id="score">Points: 0</p>
+        <p id="lives">Lives: 3</p>
+        <p id="timer">Time left: <span id="time-left">0</span> seconds</p>
+    </div>
+    <div id="footer-message">
+        Made by Gianmario Sosa and Raul Hernandez from 5VA
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
